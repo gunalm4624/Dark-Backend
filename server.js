@@ -43,7 +43,7 @@ app.post('/createOrder', async (req, res) => {
   console.log('Received create order request with amount:', amount);
 
   const options = {
-    amount: amount * 100, // Convert amount to paise
+    amount: amount, // Convert amount to paise
     currency: "INR",
     receipt: "receipt#" + Date.now(),
   };
