@@ -5,7 +5,7 @@ const cors = require('cors');
 require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
-const port = 3000;
+const port =process.env.PORT || 3000;
 
 // Use environment variables for Razorpay keys
 const razorpayKeyId = process.env.RAZORPAY_KEY_ID || 'rzp_live_NJhjg5FQ7waeGc';
